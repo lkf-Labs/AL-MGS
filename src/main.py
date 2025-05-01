@@ -218,7 +218,7 @@ def get_kwargs_sampling(sampling_config, data_dir, data_config, datamodule, seed
 if __name__ == "__main__":
     parser = ArgumentParser()
     # These are the paths to the data and output folder
-    parser.add_argument('--data_dir', default='datasets', type=str, help='Directory for pre-downloaded imagenet or cache for CIFAR10.')
+    parser.add_argument('--data_dir', default='datasets', type=str, help='Directory for datasets.')
     parser.add_argument('--output_dir', default='output', type=str, help='Directory for output run')
     
     # These are config files located in src/Config
