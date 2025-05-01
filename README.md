@@ -69,20 +69,17 @@ Input of `main.py`:
 --data_config     # dataset configuration file 
 --model_config    # model (U-Net) parameter configuration file
 --train_config    # training parameter config 
---sampling_config # select the sampling strategy (We provide all sampling strategies used in the paper, including ablation studies.)
+--sampling_config # select the sampling strategy (We provide all sampling strategies used in our paper, including ablation studies.)
 --logger_config   # logger configuration file 
+--initial_set_construction_criteria           # we provide two initial labeled set selection strategies: RS or SR-ILS
 
 # Additional training configs (seed and gpu)
---seed
+--seed         # We employ fixed random seeds to ensure experimental reproducibility.
 --num_gpu      # number of GPU devices to use
 --gpu_idx      # gpu index
 
-# Training hyper-parameters that we should change according to the dataset
-# Note: arguments start with 'train__' if modifying train_config, 
-# and with 'model__'  if modifying model_config, 
-# Name is determined by hierarchical keywords to value in config, each separated by '__'
+ # Note: Training hyper-parameters that we should change according to the dataset
 --model__out_channels             # number of output channels
---initial_set_construction_criteria           # provide two initial labeled set selection strategies: RS or SR-ILS
 --train__loss__normalize_fct      # softmax or sigmoid
 --train__loss__n_classes          # number of output classes (depends on data)
 ```
