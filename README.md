@@ -67,9 +67,9 @@ Input of `main.py`:
 
 # These are config file names located in src/Config
 --data_config     # dataset configuration file 
---model_config    # model(U-Net) configuration file
+--model_config    # model (U-Net) parameter configuration file
 --train_config    # training parameter config 
---sampling_config # sampling strategy configuration parameters
+--sampling_config # select the sampling strategy (We provide all sampling strategies used in the paper, including ablation studies.)
 --logger_config   # logger configuration file 
 
 # Additional training configs (seed and gpu)
