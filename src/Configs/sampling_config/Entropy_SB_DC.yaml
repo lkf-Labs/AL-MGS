@@ -1,0 +1,9 @@
+strategy: "Entropy"
+sampling_params: 
+  RandomPacks: 
+    resampling: False
+    num_groups: null     # If resampling is True
+    aggregation: "mean"
+    Diversity_Constraint:
+      select_groups_num: 5
+      start_AL_cycle: -1

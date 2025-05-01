@@ -1,0 +1,11 @@
+strategy: "progressive_hybrid" # Two-stage sampling with adaptive threshold
+sampling_params:
+    strategy1: "Entropy"
+    RandomPacks:
+        resampling: False
+        num_groups: null     # If resampling is True
+        aggregation: "mean"
+#    progressive_threshold: 0.90
+    strategy2: "hybrid"
+    similarity_metric: "CosineSimilarity"
+    select_top_diverse_num: 120

@@ -1,0 +1,4 @@
+strategy: "Entropy"
+sampling_params:
+  Diversity_Constraint:
+    select_top_uncertainty_num: 30

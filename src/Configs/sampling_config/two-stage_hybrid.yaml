@@ -1,0 +1,9 @@
+strategy: "Entropy"  # Two-stage sampling with fixed thresholds
+sampling_params:
+#    RandomPacks:
+#        resampling: False
+#        num_groups: null     # If resampling is True
+#        aggregation: "mean"
+    DC_start_AL_cycle: 3
+    strategy: "hybrid"
+    select_top_diverse_num: 30

@@ -1,0 +1,3 @@
+strategy: "SDS" # simple diverse sampling
+sampling_params:
+  similarity_metric: "CosineSimilarity"

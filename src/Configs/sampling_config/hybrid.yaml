@@ -1,0 +1,3 @@
+strategy: "hybrid" # only stage2 sampling
+sampling_params:
+    select_top_diverse_num: 120
