@@ -1,5 +1,5 @@
 # AL-MGS
-## Annotation-Efficient Meibomian Gland Segmentation via Active Learning
+## Active Learning for Meibomian Gland Segmentation in Infrared Meibography Images
 
 ## 🧠 Introduction
 
