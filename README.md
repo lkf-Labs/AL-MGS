@@ -1,13 +1,13 @@
 # AL-MGS
 ## Annotation-Efficient Meibomian Gland Segmentation via Active Learning
 
-## 💡 Introduction
+## 🧠 Introduction
 
 <p align="center">
   <img src="./src/assets/img/PHS_framework.png" alt="drawing"/>
 </p>
 
-**This study explores the application of AL in infrared meibography image segmentation and proposes a novel progressive hybrid sampling framework. First, to reduce random bias and the cold start problem, an initial labeled set is constructed by combining the image's inherent specular reflection prior. Then, a two-stage dynamic sampling strategy is implemented. At the initial AL iteration stages, the model queries the most uncertain samples guided by entropy to quickly improve performance while monitoring sample redundancy through an adaptive threshold. When redundancy becomes too high, the simple diversity sampling module is activated to enhance the model's generalization ability.**
+**🔍This study explores the application of AL in infrared meibography image segmentation and proposes a novel progressive hybrid sampling framework. First, to reduce random bias and the cold start problem, an initial labeled set is constructed by combining the image's inherent specular reflection prior. Then, a two-stage dynamic sampling strategy is implemented. At the initial AL iteration stages, the model queries the most uncertain samples guided by entropy to quickly improve performance while monitoring sample redundancy through an adaptive threshold. When redundancy becomes too high, the simple diversity sampling module is activated to enhance the model's generalization ability.**
  <img src="./src/assets/img/result.png" alt="drawing"/>
  
   🏆 **Extensive experiments show that our method achieves optimal performance with the same annotation budget.**
@@ -50,13 +50,13 @@ datasets
 
 ## 🚀 Training 🔥🔥🔥
 
-### 🎯 Training and evaluation
+### 📌 Training and evaluation
 We initiate the active learning process using the following command to iteratively query samples and train the U-Net model until reaching the predefined total cycle count. Additionally, we evaluate the optimal model on the test set after every cycle.
 ```
 python3 src/main.py
 ```
 
-### 🎨 Main training arguments
+### 📝 Main training arguments
 Prior to initiating active learning, certain input parameters in `main.py` require case-specific configuration.
 
 Input of `main.py`:
