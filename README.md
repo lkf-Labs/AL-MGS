@@ -7,10 +7,10 @@
   <img src="./src/assets/img/PHS_framework.png" alt="drawing"/>
 </p>
 
-**This study investigates active learning for infrared meibomian gland image segmentation and proposes a novel progressive hybrid sampling framework. Initially, we construct an annotated set by selecting challenging samples based on specular reflection artifacts. Then, a two-stage dynamic sampling strategy is implemented: (1) an entropy-guided model queries the most uncertain samples to rapidly improve performance while monitoring sample redundancy via adaptive thresholds; (2) when redundancy exceeds thresholds, a simplified diversity sampling module activates to enhance generalization.**
+**This study explores the application of AL in infrared meibography image segmentation and proposes a novel progressive hybrid sampling framework. First, to reduce random bias and the cold start problem, an initial labeled set is constructed by combining the image's inherent specular reflection prior. Then, a two-stage dynamic sampling strategy is implemented. At the initial AL iteration stages, the model queries the most uncertain samples guided by entropy to quickly improve performance while monitoring sample redundancy through an adaptive threshold. When redundancy becomes too high, the simple diversity sampling module is activated to enhance the model's generalization ability.**
  <img src="./src/assets/img/result.png" alt="drawing"/>
  
-  🏆 **Extensive experiments demonstrate our method achieves optimal performance under equivalent annotation budgets.**
+  🏆 **Extensive experiments show that our method achieves optimal performance with the same annotation budget.**
 
 ## 🛠️ Environment
 Training and evaluation environment: Python3.9.4, PyTorch 2.3.1, CUDA 12.4. Run the following command to install required packages.
