@@ -91,5 +91,12 @@ This repository is built upon [StochasticBatchAL](https://github.com/Minimel/Sto
 If you find this repository helpful, please consider citing our paper.
 
 ```
-None
+@inproceedings{lai2025active,
+  title={Active Learning for Meibomian Gland Segmentation in Infrared Meibography Images},
+  author={Lai, Kunfeng and Li, Dongqi and Benton, Ryan and Borchert, Glen and Li, Li and Lin, Jiawen and Huang, Jingshan},
+  booktitle={2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
+  pages={7251--7258},
+  year={2025},
+  organization={IEEE}
+}
 ```
